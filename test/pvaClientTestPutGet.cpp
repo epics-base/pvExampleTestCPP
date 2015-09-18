@@ -28,7 +28,7 @@ static void example(PvaClientPtr const &pvaClient)
 
     PvaClientChannelPtr pvaChannel;
     try {
-        pvaChannel = pvaClient->createChannel("PVRexamplePowerSupply");
+        pvaChannel = pvaClient->createChannel("PVRpowerSupply");
         pvaChannel->connect(2.0);
         testDiag("channel connected");
     } catch (std::runtime_error e) {

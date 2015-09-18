@@ -31,7 +31,7 @@
 #include <pv/pvData.h>
 #include <pv/pvAccess.h>
 #include <pv/pvDatabase.h>
-#include <pv/recordList.h>
+#include <pv/traceRecord.h>
 
 #include <epicsExport.h>
 #include <pv/exampleServer.h>
@@ -56,10 +56,10 @@ static void exampleServerCallFunc(const iocshArgBuf *args)
     ExampleServerPtr record = ExampleServer::create(recordName);
     bool result = master->addRecord(record);
     if(!result) cout << "recordname" << " not added" << endl;
-    PVRecordPtr pvRecord = RecordListRecord::create(
-        "laptoprecordListPGRPC");
+    PVRecordPtr pvRecord = TraceRecord::create(
+        "laptopTraceRecordPGRPC");
     if(!pvRecord) {
-          cout << "RecordListRecord::create failed" << endl;
+          cout << "TraceRecord::create failed" << endl;
     } else {
         result = master->addRecord(pvRecord);
         if(!result) cout<< "record " << recordName << " not added" << endl;

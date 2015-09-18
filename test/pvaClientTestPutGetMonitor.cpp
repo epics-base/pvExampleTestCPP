@@ -51,7 +51,7 @@ static void exampleDouble(PvaClientPtr const &pvaClient)
 
     PvaClientChannelPtr pvaChannel;
     try {
-        pvaChannel = pvaClient->createChannel("PVRexampleDouble");
+        pvaChannel = pvaClient->createChannel("PVRdouble");
         pvaChannel->connect(2.0);
         testDiag("channel connected");
     } catch (std::runtime_error e) {
