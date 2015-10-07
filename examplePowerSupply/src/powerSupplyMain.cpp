@@ -13,7 +13,6 @@
 #include <string>
 #include <iostream>
 
-#include <pv/recordList.h>
 #include <pv/powerSupply.h>
 #include <pv/traceRecord.h>
 #include <pv/channelProviderLocal.h>

@@ -12,21 +12,28 @@ The EPICS IOC is also available for running the examples in pvaClientCPP and pva
 Building
 --------
 
-???
+If a proper RELEASE.local file exists one directory level above pvExampleTestCPP
+then just type:
+
+    make
+
+If RELEASE.local does not exist then look at <b>configure/RELEASE</b>
+for directions for how to build.
 
 To run the test
 ---------------
 
-?????
+make runtests
 
 To start the database
 ------------
 
-???
+    mrk> pwd
+    mrk> ../../bin/linux-x86_64/exampleDatabase st.cmd 
 
 Status
 ------
 
-* Under Developmemt
+* Readyfor release 4.5.0
 
 
