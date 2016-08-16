@@ -27,6 +27,7 @@ exampleDatabase_SRCS_vxWorks += -nil-
 exampleDatabase_OBJS_vxWorks += $(EPICS_BASE_BIN)/vxComLibrary
 
 exampleDatabase_LIBS += exampleDatabase
+exampleDatabase_LIBS += powerSupply
 exampleDatabase_LIBS += pvDatabase
 exampleDatabase_LIBS += pvaSrv
 exampleDatabase_LIBS += pvAccess
