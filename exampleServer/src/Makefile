@@ -23,13 +23,13 @@ exampleServer_LIBS += pvData
 exampleServer_LIBS += Com
 exampleServer_LIBS += $(EPICS_BASE_IOC_LIBS)
 
-PROD_HOST += exampleServerMain
-exampleServerMain_SRCS += exampleServerMain.cpp
-exampleServerMain_LIBS += exampleServer
-exampleServerMain_LIBS += pvDatabase
-exampleServerMain_LIBS += pvAccess
-exampleServerMain_LIBS += pvData
-exampleServerMain_LIBS += Com
+#PROD_HOST += exampleServerMain
+#exampleServerMain_SRCS += exampleServerMain.cpp
+#exampleServerMain_LIBS += exampleServer
+#exampleServerMain_LIBS += pvDatabase
+#exampleServerMain_LIBS += pvAccess
+#exampleServerMain_LIBS += pvData
+#exampleServerMain_LIBS += Com
 
 #===========================
 
