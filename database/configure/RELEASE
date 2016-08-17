@@ -1,4 +1,4 @@
-# pvDatabaseCPP/example RELEASE - Location of external support modules
+# pvExampleTestCPP/database RELEASE - Location of external support modules
 #
 # IF YOU CHANGE this file or any file it includes you must
 # subsequently do a "gnumake rebuild" in the application's
@@ -24,19 +24,17 @@
 #   PVCOMMON = /path/to/epics/pvCommonCPP
 #   EPICS_BASE = /path/to/epics/base
 
-# If this example is built in a directory under pvDatabaseCPP,
+# If this example is built in a directory under pvExampleTestCPP,
 # use the following definitions:
 
 
 -include $(TOP)/configure/RELEASE.local
 -include $(TOP)/../configure/RELEASE.local
 -include $(TOP)/../../RELEASE.local
+PVEXAMPLETEST=$(TOP)/..
 
-# If you copied this example from pvDatabaseCPP to be built as a
+# If you copied this example from pvExampleTestCPP to be built as a
 # standalone TOP, adjust and use the following definitions:
 
-#PVDATABASETEST = /path/to/epics/pvDatabaseCPP/testTop
-#PVDATABASE = /path/to/epics/pvDatabaseCPP
-
 #-include $(TOP)/../RELEASE.local
-#-include $(TOP)/configure/RELEASE.local
+#PVEXAMPLETEST    = /path/to/epics/pvExampleTestCPP
