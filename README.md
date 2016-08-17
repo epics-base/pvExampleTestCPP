@@ -1,5 +1,8 @@
-pvEaxampleTestCPP
+pvExampleTestCPP
 ============
+
+**WARNING**: _This module is only relevant to the EPICS V4 version 4.5.x releases.
+For EPICS V4 version 4.6.x and later this code has been moved into the exampleCPP module._
 
 This project provides:
 
@@ -34,6 +37,6 @@ To start the database
 Status
 ------
 
-* Readyfor release 4.5.0
+* Ready for release 4.5.0
 
 
